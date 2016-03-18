@@ -16,13 +16,8 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws Exception {
         Button button = new Button("Hello");
-        button.setOnAction(new EventHandler<ActionEvent>() {
-
-            @Override
-            public void handle(ActionEvent t) {
-                System.out.println("aber hallo");
-            }
-            
+        button.setOnAction((ActionEvent t) -> {
+            System.out.println("aber hallo");
         });
         
         StackPane root = new StackPane();
